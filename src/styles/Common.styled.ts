@@ -1,13 +1,21 @@
 import styled from "styled-components";
 
+export const Wrapper = styled.div`
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+`;
+
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   padding: 40px 20px;
   box-sizing: border-box;
+  /* height: 80vh; */
 `;
 
 export const Content = styled.div`
@@ -15,12 +23,14 @@ export const Content = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  width: 100%;
 `;
 
 export const Title = styled.h1`
   font-size: 20px;
   font-weight: bold;
   color: #222;
+  width: 100%;
 `;
 
 export const SubText = styled.p`

@@ -4,12 +4,14 @@ import { stackflow } from "@stackflow/react";
 
 import ArticleActivity from "../activities/Article";
 import BeginActivity from "../activities/Begin";
+import LoginActivity from "../activities/Login";
 
 export const { Stack, useFlow } = stackflow({
   transitionDuration: 300,
   activities: {
     BeginActivity,
     ArticleActivity,
+    LoginActivity,
   },
   plugins: [
     basicRendererPlugin(),

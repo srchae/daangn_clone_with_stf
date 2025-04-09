@@ -10,9 +10,7 @@ const BeginActivity: ActivityComponentType = () => {
   const { push } = useFlow();
 
   const handleBegin = () => {
-    push("ArticleActivity", {
-      title: "Hello Daangn",
-    });
+    push("LoginActivity", {});
   };
 
   return (
@@ -29,9 +27,10 @@ const BeginActivity: ActivityComponentType = () => {
         </S.Content>
 
         <S.Footer>
-          <S.Button onClick={handleBegin}>시작하기</S.Button>
+          <S.Button>시작하기</S.Button>
           <LoginText>
-            이미 계정이 있나요? <LoginLink>로그인</LoginLink>
+            이미 계정이 있나요?{" "}
+            <LoginLink onClick={handleBegin}>로그인</LoginLink>
           </LoginText>
         </S.Footer>
       </S.Container>
