@@ -5,7 +5,8 @@ import styled from "styled-components";
 import { AppScreen } from "@stackflow/plugin-basic-ui";
 import { ActivityComponentType } from "@stackflow/react";
 
-import { AuthTimer } from "../components/authTimer";
+import { AuthTimer } from "../components/AuthTimer";
+// import { AuthTimer } from "../components/authTimer";
 import GlobalStyle from "../GlobalStyle";
 import { useFlow } from "../stackflow/stackflow";
 import * as S from "../styles/Common.styled";
